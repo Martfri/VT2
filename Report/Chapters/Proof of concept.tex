@@ -53,7 +53,12 @@ User.Read.All & Application & Read all users' full profile\tabularnewline
 \label{Required API permissions}
 \end{longtable}
 
-After the application registration has been completed, the program to interact with the Excel document can be implemented. In the code snippet below from the Microsoft documentation it can be seen that, the client credentials flow requires that you request the default scope. Further, the respective values and ID's from the Azure portal need to be replaced with the according placeholders. Using the Azure.Idenity package, the client crendetials authorisation provider can be used to handle the process of access token aquisition. The access token is used in following for every API call made by the programme. API requests can be with the use of the graphCLient object which needs to be initiated.
+After the application registration has been completed, the program to interact with the Excel document can be implemented. In the code snippet below from the Microsoft documentation it can be seen that, the client credentials flow requires that you request the default scope. Further, the respective values and ID's from the Azure portal need to be replaced with the according placeholders. Using the Azure.Idenity package, the client crendetials authorisation provider can be used to handle the process of access token aquisition. The access token is used in following for every API call made by the programme. API requests can be with the use of the graphCLient object which needs to be initiated first. ALso, following packages need to be installed: 
+\begin{itemize}
+ \item Azure.identity
+ \item Microsoft.Graph
+ \item Microsoft.Graph.Auth
+\end{itemize}
 
 
 
